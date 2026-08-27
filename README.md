@@ -37,7 +37,7 @@ I installed Active Directory Domain Services (AD DS) on Windows Server 2019 and 
 
 ### AD DS Installation and Domain Controller Promotion
 
-![Active Directory Domain Services installation and domain controller configuration](screenshots/1.jpg)
+![Active Directory Domain Services installation and domain controller configuration](screenshots/image1.png)
 
 *Windows Server 2019 successfully configured as an Active Directory domain controller after installing Active Directory Domain Services (AD DS).*
 
@@ -49,7 +49,7 @@ After configuring the domain controller, I verified the server and Active Direct
 
 ### Domain Configuration Verification
 
-![Active Directory domain configuration verification](screenshots/2.jpg)
+![Active Directory domain configuration verification](screenshots/image2.png)
 
 *Verification of the Windows Server 2019 domain controller and Active Directory domain configuration.*
 
@@ -61,7 +61,7 @@ I created an Organizational Unit named `CYB-515` to provide a structured locatio
 
 ### Organizational Unit Configuration
 
-![Active Directory Organizational Unit configuration](screenshots/3.jpg)
+![Active Directory Organizational Unit configuration](screenshots/image3.png)
 
 *Organizational Unit (OU) created in Active Directory Users and Computers to organize and manage domain users and security groups.*
 
@@ -75,7 +75,7 @@ I then verified that the accounts were successfully created through Active Direc
 
 ### Domain User Account Provisioning
 
-![Active Directory user account provisioning](screenshots/4.jpg)
+![Active Directory user account provisioning](screenshots/image4.png)
 
 *Multiple domain user accounts created and verified within the CYB-515 Organizational Unit in Active Directory.*
 
@@ -83,7 +83,7 @@ I then verified that the accounts were successfully created through Active Direc
 
 ## 5. Security Group Administration with PowerShell
 
-I used PowerShell and the `New-ADGroup` cmdlet to create departmental security groups, including:
+I used PowerShell and the `New-ADGroup` command to create departmental security groups, including:
 
 - Sales Department
 - Research and Development Department
@@ -95,7 +95,7 @@ I then verified the groups through Active Directory Users and Computers.
 
 ### Security Group Creation with PowerShell
 
-![Active Directory security group administration](screenshots/6.jpg)
+![Active Directory security group administration](screenshots/image6.png)
 
 *Departmental security groups created in Active Directory using the PowerShell `New-ADGroup` cmdlet.*
 
@@ -109,7 +109,7 @@ The configuration included password history, password age requirements, minimum 
 
 ### Password Policy Configuration
 
-![Active Directory password policy configuration](screenshots/8.jpg)
+![Active Directory password policy configuration](screenshots/image8.png)
 
 *Active Directory password requirements configured through Group Policy Management, including password history, age, length, complexity, and reversible encryption settings.*
 
@@ -121,7 +121,7 @@ After configuring the security policy, I used `gpupdate /force` to refresh Group
 
 ### Group Policy Application Verification
 
-![Group Policy application verification](screenshots/9.jpg)
+![Group Policy application verification](screenshots/image9.png)
 
 *Group Policy settings refreshed and applied using `gpupdate /force` to verify successful policy enforcement.*
 
